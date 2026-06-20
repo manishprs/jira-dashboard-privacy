@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Jira Executive Dashboard</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+    color: #1F2937;
+    line-height: 1.65;
+    background: #FFFFFF;
+  }
+  h1 {
+    font-size: 28px;
+    margin-bottom: 4px;
+    color: #0A0E1A;
+  }
+  .updated {
+    color: #6B7280;
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+  h2 {
+    font-size: 19px;
+    margin-top: 40px;
+    margin-bottom: 12px;
+    color: #111827;
+    border-bottom: 1px solid #E5E7EB;
+    padding-bottom: 8px;
+  }
+  p { margin: 12px 0; }
+  ul { margin: 12px 0; padding-left: 22px; }
+  li { margin: 6px 0; }
+  strong { color: #111827; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 14px;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border: 1px solid #E5E7EB;
+  }
+  th {
+    background: #F9FAFB;
+    font-weight: 600;
+  }
+  code {
+    background: #F3F4F6;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-family: 'SF Mono', Consolas, monospace;
+  }
+  .footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid #E5E7EB;
+    color: #6B7280;
+    font-size: 13px;
+  }
+  a { color: #3B82F6; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy — Jira Executive Dashboard</h1>
+<p class="updated">Last updated: June 2026</p>
+
+<h2>Overview</h2>
+<p>
+  Jira Executive Dashboard ("the Extension") is a Chrome browser extension that provides
+  an executive-grade dashboard view of your Jira boards. This privacy policy explains what
+  data the Extension accesses, how it is used, and what it does not do.
+</p>
+
+<h2>Data we access</h2>
+<p>The Extension accesses the following data from your Jira instance:</p>
+<ul>
+  <li><strong>Board information</strong> — board names, IDs, and types</li>
+  <li><strong>Sprint information</strong> — sprint names, start dates, end dates, and status</li>
+  <li><strong>Issue information</strong> — issue keys, summaries, statuses, priorities, assignees, created dates, and due dates</li>
+  <li><strong>User information</strong> — assignee display names, email addresses, and avatar images</li>
+</ul>
+<p>
+  This data is fetched directly from your Jira instance using the Jira REST API, using your
+  existing authenticated browser session.
+</p>
+
+<h2>How data is used</h2>
+<p>All data accessed by the Extension is used exclusively to render the dashboard panels within your browser. Specifically:</p>
+<ul>
+  <li>Issue data is used to populate the Executive Dashboard, Board View, and People View</li>
+  <li>Assignee data is used to build the Workload Chart and People View</li>
+  <li>Sprint data is used to display sprint progress and health indicators</li>
+</ul>
+<p><strong>The Extension does not:</strong></p>
+<ul>
+  <li>Store any Jira data on external servers</li>
+  <li>Transmit any data to any third-party service</li>
+  <li>Log or track your Jira usage</li>
+  <li>Collect any personal information beyond what is displayed in the dashboard</li>
+  <li>Use your data for advertising or analytics</li>
+</ul>
+
+<h2>Data storage</h2>
+<p>The Extension stores only the following in your browser's local storage (<code>chrome.storage.sync</code>):</p>
+<ul>
+  <li>Your list of featured board IDs (board numbers you have selected to appear on the Executive Dashboard)</li>
+</ul>
+<p>This preference data:</p>
+<ul>
+  <li>Never leaves your browser except to sync across your own Chrome instances via your Google account (standard Chrome sync)</li>
+  <li>Does not include any Jira issue content, assignee details, or personal information</li>
+  <li>Can be cleared at any time by removing the Extension</li>
+</ul>
+
+<h2>Authentication</h2>
+<p>
+  The Extension uses your existing Jira browser session to make API calls. It does not ask
+  for, store, or transmit your Jira password or API token. All API requests are made directly
+  from your browser to your Jira instance (e.g. <code>https://yourcompany.atlassian.net</code>)
+  using the same authentication cookies that Jira already uses when you browse it normally.
+</p>
+
+<h2>Third-party services</h2>
+<p>
+  The Extension does not integrate with or send data to any third-party services. There is no
+  backend server associated with this Extension. All processing happens locally in your browser.
+</p>
+
+<h2>Permissions</h2>
+<p>The Extension requests the following Chrome permissions:</p>
+<table>
+  <tr><th>Permission</th><th>Reason</th></tr>
+  <tr><td><code>storage</code></td><td>To save your featured board preferences locally</td></tr>
+  <tr><td><code>activeTab</code></td><td>To detect the current Jira page and inject the dashboard panel</td></tr>
+  <tr><td>Host permission for <code>*.atlassian.net</code> and <code>*.jira.com</code></td><td>To make Jira API calls using your existing session</td></tr>
+</table>
+<p>No other permissions are requested or used.</p>
+
+<h2>Children's privacy</h2>
+<p>
+  This Extension is intended for professional use by engineering managers, CTOs, and product
+  leaders. It is not directed at children under the age of 13. We do not knowingly collect
+  information from children.
+</p>
+
+<h2>Changes to this policy</h2>
+<p>
+  If this privacy policy changes in a future version of the Extension, the updated date at the
+  top of this page will be revised. Significant changes will be noted in the Extension's Chrome
+  Web Store update notes.
+</p>
+
+<h2>Contact</h2>
+<p>
+  If you have any questions about this privacy policy or the Extension's data practices,
+  please contact:
+</p>
+<p>
+  <strong>Email:</strong> manishprs@gmail.com<br>
+  <strong>GitHub:</strong> <a href="https://github.com/your-username">github.com/manishprs</a>
+</p>
+
+<div class="footer">
+  Jira Executive Dashboard — Privacy Policy
+</div>
+
+</body>
+</html>
